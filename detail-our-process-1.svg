@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-label="Our Process scene">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#072236"/>
+      <stop offset="100%" stop-color="#0a5f50"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#d8edf7" stroke-opacity="0.13" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+  <rect x="0" y="860" width="1920" height="220" fill="#031521" fill-opacity="0.33"/>
+  <text x="110" y="150" fill="#edf9f4" font-family="Outfit, sans-serif" font-size="64" font-weight="800">Our Process</text>
+  <text x="110" y="208" fill="#9df1d3" font-family="Plus Jakarta Sans, sans-serif" font-size="30" font-weight="600">Consultation | Execution | Handover</text>
+  <g opacity="0.22" stroke="#9df1d3" stroke-width="3" fill="none">
+    <polyline points="90,760 420,500 740,690 1080,430 1440,620 1830,470"/>
+    <polyline points="90,810 420,550 740,740 1080,480 1440,670 1830,520"/>
+  </g>
+    <g fill="#ffffff" fill-opacity="0.1">
+    <rect x="170" y="420" width="240" height="380" rx="12"/>
+    <rect x="440" y="420" width="240" height="380" rx="12"/>
+    <rect x="710" y="420" width="240" height="380" rx="12"/>
+    <rect x="980" y="420" width="240" height="380" rx="12"/>
+    <rect x="1250" y="420" width="240" height="380" rx="12"/>
+    <rect x="1520" y="420" width="240" height="380" rx="12"/>
+  </g>
+  <g fill="#9ff0d2" opacity="0.92">
+    <circle cx="290" cy="610" r="44"/>
+    <circle cx="560" cy="610" r="44"/>
+    <circle cx="830" cy="610" r="44"/>
+    <circle cx="1100" cy="610" r="44"/>
+    <circle cx="1370" cy="610" r="44"/>
+    <circle cx="1640" cy="610" r="44"/>
+  </g>
+  <g fill="#08273b">
+    <text x="266" y="620" font-family="Outfit, sans-serif" font-size="38" font-weight="800">1</text>
+    <text x="536" y="620" font-family="Outfit, sans-serif" font-size="38" font-weight="800">2</text>
+    <text x="806" y="620" font-family="Outfit, sans-serif" font-size="38" font-weight="800">3</text>
+    <text x="1076" y="620" font-family="Outfit, sans-serif" font-size="38" font-weight="800">4</text>
+    <text x="1346" y="620" font-family="Outfit, sans-serif" font-size="38" font-weight="800">5</text>
+    <text x="1616" y="620" font-family="Outfit, sans-serif" font-size="38" font-weight="800">6</text>
+  </g>
+</svg>

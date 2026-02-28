@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-label="Construction Management scene">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#082335"/>
+      <stop offset="100%" stop-color="#0b4f64"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#d8edf7" stroke-opacity="0.13" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+  <rect x="0" y="860" width="1920" height="220" fill="#031521" fill-opacity="0.33"/>
+  <text x="110" y="150" fill="#edf9f4" font-family="Outfit, sans-serif" font-size="64" font-weight="800">Construction Management</text>
+  <text x="110" y="208" fill="#a7edff" font-family="Plus Jakarta Sans, sans-serif" font-size="30" font-weight="600">Planning | Control | QA/QC</text>
+  <g opacity="0.22" stroke="#a7edff" stroke-width="3" fill="none">
+    <polyline points="90,760 420,500 740,690 1080,430 1440,620 1830,470"/>
+    <polyline points="90,810 420,550 740,740 1080,480 1440,670 1830,520"/>
+  </g>
+    <g fill="#ffffff" fill-opacity="0.11">
+    <rect x="220" y="470" width="1400" height="360"/>
+    <rect x="280" y="420" width="200" height="50"/>
+    <rect x="520" y="420" width="200" height="50"/>
+    <rect x="760" y="420" width="200" height="50"/>
+  </g>
+  <g>
+    <circle cx="540" cy="560" r="34" fill="#f3c38e"/>
+    <rect x="500" y="598" width="82" height="148" rx="18" fill="#b0e7ff"/>
+    <rect x="520" y="742" width="20" height="88" fill="#193247"/>
+    <rect x="548" y="742" width="20" height="88" fill="#193247"/>
+  </g>
+  <g fill="#9fe8ff" opacity="0.85">
+    <rect x="880" y="510" width="350" height="220" rx="10"/>
+    <rect x="910" y="540" width="130" height="22" fill="#0b3550"/>
+    <rect x="910" y="580" width="250" height="16" fill="#0b3550"/>
+    <rect x="910" y="610" width="210" height="16" fill="#0b3550"/>
+    <rect x="910" y="640" width="170" height="16" fill="#0b3550"/>
+  </g>
+</svg>

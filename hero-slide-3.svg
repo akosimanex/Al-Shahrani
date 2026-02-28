@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-label="Construction blueprint background 3">
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#061f31"/>
+      <stop offset="45%" stop-color="#0a3046"/>
+      <stop offset="100%" stop-color="#05683a"/>
+    </linearGradient>
+    <pattern id="diag" width="36" height="36" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+      <line x1="0" y1="0" x2="0" y2="36" stroke="#e4f6ff" stroke-opacity="0.08" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#g3)"/>
+  <rect width="1920" height="1080" fill="url(#diag)"/>
+  <g opacity="0.2" fill="#ffffff">
+    <circle cx="280" cy="200" r="110"/>
+    <circle cx="1540" cy="280" r="140"/>
+    <circle cx="1760" cy="760" r="180"/>
+  </g>
+  <g fill="none" stroke="#9ad8f0" stroke-opacity="0.42" stroke-width="3">
+    <polyline points="120,780 360,460 620,620 900,320 1170,520 1420,260 1770,500"/>
+    <polyline points="120,840 360,520 620,680 900,380 1170,580 1420,320 1770,560"/>
+  </g>
+  <g>
+    <rect x="140" y="700" width="420" height="140" fill="#ffffff" fill-opacity="0.12"/>
+    <rect x="600" y="620" width="520" height="220" fill="#ffffff" fill-opacity="0.11"/>
+    <rect x="1160" y="670" width="360" height="170" fill="#ffffff" fill-opacity="0.12"/>
+  </g>
+</svg>

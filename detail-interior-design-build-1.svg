@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-label="Interior Design & Build scene">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a2032"/>
+      <stop offset="100%" stop-color="#11654b"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#d8edf7" stroke-opacity="0.13" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+  <rect x="0" y="860" width="1920" height="220" fill="#031521" fill-opacity="0.33"/>
+  <text x="110" y="150" fill="#edf9f4" font-family="Outfit, sans-serif" font-size="64" font-weight="800">Interior Design & Build</text>
+  <text x="110" y="208" fill="#bdf8db" font-family="Plus Jakarta Sans, sans-serif" font-size="30" font-weight="600">Layouts | Finishes | Joinery</text>
+  <g opacity="0.22" stroke="#bdf8db" stroke-width="3" fill="none">
+    <polyline points="90,760 420,500 740,690 1080,430 1440,620 1830,470"/>
+    <polyline points="90,810 420,550 740,740 1080,480 1440,670 1830,520"/>
+  </g>
+    <g fill="#ffffff" fill-opacity="0.11">
+    <rect x="180" y="350" width="520" height="510"/>
+    <rect x="760" y="300" width="980" height="560"/>
+  </g>
+  <g>
+    <circle cx="500" cy="560" r="34" fill="#f3c38e"/>
+    <rect x="460" y="598" width="82" height="146" rx="18" fill="#b8f1d7"/>
+    <rect x="480" y="742" width="20" height="86" fill="#1c3344"/>
+    <rect x="508" y="742" width="20" height="86" fill="#1c3344"/>
+  </g>
+  <g fill="#b3f4d3" opacity="0.9">
+    <rect x="860" y="420" width="220" height="160"/>
+    <rect x="1110" y="420" width="220" height="160"/>
+    <rect x="1360" y="420" width="220" height="160"/>
+    <rect x="860" y="610" width="220" height="160"/>
+    <rect x="1110" y="610" width="220" height="160"/>
+  </g>
+</svg>
