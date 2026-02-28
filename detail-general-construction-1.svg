@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-label="General Construction scene">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06263a"/>
+      <stop offset="100%" stop-color="#0b6b48"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#d8edf7" stroke-opacity="0.13" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+  <rect x="0" y="860" width="1920" height="220" fill="#031521" fill-opacity="0.33"/>
+  <text x="110" y="150" fill="#edf9f4" font-family="Outfit, sans-serif" font-size="64" font-weight="800">General Construction</text>
+  <text x="110" y="208" fill="#9ff4cd" font-family="Plus Jakarta Sans, sans-serif" font-size="30" font-weight="600">Gypsum | Concrete | Demolition</text>
+  <g opacity="0.22" stroke="#9ff4cd" stroke-width="3" fill="none">
+    <polyline points="90,760 420,500 740,690 1080,430 1440,620 1830,470"/>
+    <polyline points="90,810 420,550 740,740 1080,480 1440,670 1830,520"/>
+  </g>
+    <g fill="#ffffff" fill-opacity="0.12">
+    <rect x="250" y="340" width="300" height="520"/>
+    <rect x="620" y="290" width="360" height="570"/>
+    <rect x="1040" y="390" width="250" height="470"/>
+  </g>
+  <g><circle cx="560" cy="560" r="38" fill="#f3c38e"/><rect x="512" y="605" width="96" height="170" rx="22" fill="#ffdb5b"/><rect x="508" y="650" width="104" height="28" fill="#1d2f42" opacity="0.6"/><rect x="530" y="770" width="26" height="90" fill="#1d2f42"/><rect x="566" y="770" width="26" height="90" fill="#1d2f42"/></g>
+  <g><circle cx="860" cy="548" r="36" fill="#f1bf88"/><rect x="816" y="592" width="88" height="164" rx="20" fill="#8dd9ff"/><rect x="812" y="636" width="96" height="24" fill="#183246" opacity="0.55"/><rect x="834" y="754" width="24" height="92" fill="#183246"/><rect x="868" y="754" width="24" height="92" fill="#183246"/></g>
+  <g stroke="#b7f4d5" stroke-width="7" fill="none" opacity="0.8">
+    <line x1="960" y1="610" x2="1120" y2="490"/>
+    <line x1="1085" y1="500" x2="1180" y2="620"/>
+  </g>
+  <rect x="1180" y="680" width="220" height="120" fill="#9fb3bf" opacity="0.55"/>
+</svg>

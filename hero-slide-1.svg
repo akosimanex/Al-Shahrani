@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-label="Construction blueprint background 1">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#052033"/>
+      <stop offset="55%" stop-color="#0a3f58"/>
+      <stop offset="100%" stop-color="#0a6b47"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#b9d7e4" stroke-opacity="0.14" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#g1)"/>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+  <g opacity="0.28" stroke="#d9edf4" fill="none">
+    <rect x="130" y="300" width="260" height="520" stroke-width="3"/>
+    <rect x="430" y="240" width="340" height="580" stroke-width="3"/>
+    <rect x="820" y="170" width="420" height="650" stroke-width="3"/>
+    <rect x="1300" y="270" width="220" height="550" stroke-width="3"/>
+  </g>
+  <g opacity="0.45">
+    <path d="M130 820 L390 300" stroke="#7fe0b2" stroke-width="6"/>
+    <path d="M430 820 L770 240" stroke="#7fe0b2" stroke-width="6"/>
+    <path d="M820 820 L1240 170" stroke="#7fe0b2" stroke-width="6"/>
+  </g>
+  <circle cx="1510" cy="200" r="150" fill="#ffffff" fill-opacity="0.08"/>
+  <circle cx="1620" cy="830" r="220" fill="#ffffff" fill-opacity="0.06"/>
+</svg>

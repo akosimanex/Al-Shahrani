@@ -1,0 +1,78 @@
+﻿<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#061c2b"/>
+      <stop offset="55%" stop-color="#0b3d58"/>
+      <stop offset="100%" stop-color="#00783f"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8effc9" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#8ac8e8" stop-opacity="0.25"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#bg)"/>
+
+  <g opacity="0.32" stroke="url(#line)" stroke-width="2">
+    <path d="M0 130H1200"/>
+    <path d="M0 260H1200"/>
+    <path d="M0 390H1200"/>
+    <path d="M0 520H1200"/>
+    <path d="M0 650H1200"/>
+    <path d="M0 780H1200"/>
+    <path d="M110 0V900"/>
+    <path d="M240 0V900"/>
+    <path d="M370 0V900"/>
+    <path d="M500 0V900"/>
+    <path d="M630 0V900"/>
+    <path d="M760 0V900"/>
+    <path d="M890 0V900"/>
+    <path d="M1020 0V900"/>
+    <path d="M1150 0V900"/>
+  </g>
+
+  <g fill="#8DF3BE" opacity="0.92">
+    <rect x="95" y="92" width="24" height="24"/>
+    <rect x="126" y="123" width="24" height="24"/>
+    <rect x="157" y="92" width="24" height="24"/>
+    <rect x="188" y="123" width="24" height="24"/>
+
+    <rect x="972" y="94" width="30" height="30"/>
+    <rect x="1009" y="131" width="30" height="30"/>
+    <rect x="1046" y="94" width="30" height="30"/>
+    <rect x="1083" y="131" width="30" height="30"/>
+    <rect x="1120" y="94" width="30" height="30"/>
+
+    <rect x="132" y="726" width="22" height="22"/>
+    <rect x="161" y="754" width="22" height="22"/>
+    <rect x="190" y="726" width="22" height="22"/>
+
+    <rect x="968" y="704" width="26" height="26"/>
+    <rect x="1001" y="738" width="26" height="26"/>
+    <rect x="1034" y="704" width="26" height="26"/>
+    <rect x="1067" y="738" width="26" height="26"/>
+    <rect x="1100" y="704" width="26" height="26"/>
+  </g>
+
+  <g opacity="0.95">
+    <rect x="222" y="230" width="760" height="430" rx="24" fill="#071724"/>
+    <rect x="248" y="256" width="708" height="56" rx="12" fill="#0b2f42"/>
+    <rect x="248" y="334" width="446" height="14" rx="7" fill="#23526B"/>
+    <rect x="248" y="360" width="610" height="14" rx="7" fill="#1A4156"/>
+    <rect x="248" y="386" width="570" height="14" rx="7" fill="#1A4156"/>
+
+    <rect x="248" y="438" width="180" height="180" rx="14" fill="#0d3b53"/>
+    <rect x="446" y="438" width="180" height="180" rx="14" fill="#09553E"/>
+    <rect x="644" y="438" width="180" height="180" rx="14" fill="#0d3b53"/>
+
+    <path d="M280 286H540" stroke="#8DF3BE" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="895" cy="284" r="16" fill="#8DF3BE"/>
+  </g>
+
+  <text x="250" y="170" fill="#D4F5E7" font-family="Outfit, Arial, sans-serif" font-size="52" font-weight="700">
+    Al Shahrani Technical Services LLC
+  </text>
+  <text x="250" y="208" fill="#93C9DE" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="24" font-weight="600">
+    Precision. Discipline. Reliable Technical Delivery.
+  </text>
+</svg>
