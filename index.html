@@ -33,10 +33,9 @@
     <main id="top">
         <section class="hero">
             <div class="hero-bg" aria-hidden="true">
-                <video class="hero-video" autoplay muted loop playsinline webkit-playsinline preload="metadata" poster="home-1.jpg">
-                    <source src="video.mp4" type="video/mp4">
-                </video>
-                <button class="hero-video-fallback" type="button" hidden>Tap to play video</button>
+                <div class="hero-bg-slide slide-a"></div>
+                <div class="hero-bg-slide slide-b"></div>
+                <div class="hero-bg-slide slide-c"></div>
             </div>
             <div class="hero-overlay" aria-hidden="true"></div>
 
@@ -280,57 +279,6 @@
 
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
-
-        const heroVideo = document.querySelector(".hero-video");
-        const heroVideoFallback = document.querySelector(".hero-video-fallback");
-        if (heroVideo) {
-            heroVideo.muted = true;
-            heroVideo.defaultMuted = true;
-            heroVideo.playsInline = true;
-            heroVideo.setAttribute("playsinline", "");
-            heroVideo.setAttribute("webkit-playsinline", "");
-
-            const showFallback = () => {
-                if (!heroVideoFallback) return;
-                heroVideoFallback.hidden = false;
-                heroVideo.setAttribute("controls", "controls");
-            };
-
-            const hideFallback = () => {
-                if (!heroVideoFallback) return;
-                heroVideoFallback.hidden = true;
-            };
-
-            const tryPlayHeroVideo = () => {
-                if (document.hidden) return;
-                const playPromise = heroVideo.play();
-                if (playPromise && typeof playPromise.catch === "function") {
-                    playPromise.catch(() => {
-                        showFallback();
-                    });
-                }
-            };
-
-            window.addEventListener("pageshow", tryPlayHeroVideo);
-            heroVideo.addEventListener("loadedmetadata", tryPlayHeroVideo);
-            heroVideo.addEventListener("canplay", tryPlayHeroVideo);
-            heroVideo.addEventListener("playing", hideFallback);
-            document.addEventListener("visibilitychange", tryPlayHeroVideo);
-            document.addEventListener("touchstart", tryPlayHeroVideo, { once: true, passive: true });
-            document.addEventListener("click", tryPlayHeroVideo, { once: true });
-
-            if (heroVideoFallback) {
-                heroVideoFallback.addEventListener("click", () => {
-                    tryPlayHeroVideo();
-                });
-            }
-
-            window.setTimeout(() => {
-                if (heroVideo.paused) {
-                    showFallback();
-                }
-            }, 1400);
-        }
     </script>
 </body>
 </html>
