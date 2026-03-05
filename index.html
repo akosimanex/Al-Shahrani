@@ -306,6 +306,24 @@
         const servicesFlyout = document.getElementById("services-flyout");
 
         if (servicesMenu && servicesTrigger && servicesFlyout) {
+            const placeServicesFlyout = () => {
+                if (!window.matchMedia("(max-width: 700px)").matches) {
+                    servicesFlyout.style.top = "";
+                    servicesFlyout.style.left = "";
+                    return;
+                }
+
+                const rect = servicesTrigger.getBoundingClientRect();
+                const flyoutWidth = Math.min(window.innerWidth * 0.9, 320);
+                const center = rect.left + rect.width / 2;
+                const minCenter = flyoutWidth / 2 + 8;
+                const maxCenter = window.innerWidth - flyoutWidth / 2 - 8;
+                const clampedCenter = Math.max(minCenter, Math.min(center, maxCenter));
+
+                servicesFlyout.style.left = `${clampedCenter}px`;
+                servicesFlyout.style.top = `${rect.bottom + 8}px`;
+            };
+
             const closeServicesMenu = () => {
                 servicesMenu.classList.remove("is-open");
                 servicesTrigger.setAttribute("aria-expanded", "false");
@@ -314,6 +332,7 @@
             servicesTrigger.addEventListener("click", () => {
                 const isOpen = servicesMenu.classList.toggle("is-open");
                 servicesTrigger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+                if (isOpen) placeServicesFlyout();
             });
 
             document.addEventListener("click", (event) => {
@@ -330,6 +349,12 @@
 
             servicesFlyout.querySelectorAll("a").forEach((link) => {
                 link.addEventListener("click", () => closeServicesMenu());
+            });
+
+            window.addEventListener("resize", () => {
+                if (servicesMenu.classList.contains("is-open")) {
+                    placeServicesFlyout();
+                }
             });
         }
     </script>

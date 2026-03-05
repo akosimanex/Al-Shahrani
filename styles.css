@@ -821,8 +821,9 @@ h1 {
     }
 
     .services-flyout {
+        position: fixed;
         left: 50%;
-        top: calc(100% + 8px);
+        top: 112px;
         min-width: 0;
         width: min(90vw, 320px);
         max-height: 65vh;
