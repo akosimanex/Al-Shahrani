@@ -21,7 +21,20 @@
             </a>
             <nav class="nav-links" aria-label="Primary">
                 <a href="#about">About</a>
-                <a href="#services">Services</a>
+                <div class="services-menu">
+                    <button class="services-trigger" type="button" aria-expanded="false" aria-controls="services-flyout">
+                        Services
+                    </button>
+                    <div class="services-flyout" id="services-flyout" role="menu">
+                        <a href="#services" role="menuitem">Services Overview</a>
+                        <a href="service-details.html?tab=general-construction" role="menuitem">General Construction</a>
+                        <a href="service-details.html?tab=mep-services" role="menuitem">MEP Services</a>
+                        <a href="service-details.html?tab=construction-management" role="menuitem">Construction Management</a>
+                        <a href="service-details.html?tab=interior-design-build" role="menuitem">Interior Design and Build</a>
+                        <a href="service-details.html?tab=our-process" role="menuitem">Our Process</a>
+                        <a href="service-details.html?tab=why-choose-us" role="menuitem">Why Choose Us</a>
+                    </div>
+                </div>
                 <a href="#team">Team</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
@@ -286,6 +299,38 @@
             heroVideo.loop = true;
             heroVideo.autoplay = true;
             heroVideo.play().catch(() => {});
+        }
+
+        const servicesMenu = document.querySelector(".services-menu");
+        const servicesTrigger = document.querySelector(".services-trigger");
+        const servicesFlyout = document.getElementById("services-flyout");
+
+        if (servicesMenu && servicesTrigger && servicesFlyout) {
+            const closeServicesMenu = () => {
+                servicesMenu.classList.remove("is-open");
+                servicesTrigger.setAttribute("aria-expanded", "false");
+            };
+
+            servicesTrigger.addEventListener("click", () => {
+                const isOpen = servicesMenu.classList.toggle("is-open");
+                servicesTrigger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+            });
+
+            document.addEventListener("click", (event) => {
+                if (!servicesMenu.contains(event.target)) {
+                    closeServicesMenu();
+                }
+            });
+
+            document.addEventListener("keydown", (event) => {
+                if (event.key === "Escape") {
+                    closeServicesMenu();
+                }
+            });
+
+            servicesFlyout.querySelectorAll("a").forEach((link) => {
+                link.addEventListener("click", () => closeServicesMenu());
+            });
         }
     </script>
 </body>
