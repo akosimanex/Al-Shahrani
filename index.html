@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=asts-pro-3">
+    <link rel="stylesheet" href="styles.css?v=asts-pro-4">
 </head>
 <body>
     <div class="site-bg" aria-hidden="true"></div>
@@ -329,11 +329,18 @@
                 servicesTrigger.setAttribute("aria-expanded", "false");
             };
 
-            servicesTrigger.addEventListener("click", () => {
+            const toggleServicesMenu = (event) => {
+                if (event) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
                 const isOpen = servicesMenu.classList.toggle("is-open");
                 servicesTrigger.setAttribute("aria-expanded", isOpen ? "true" : "false");
                 if (isOpen) placeServicesFlyout();
-            });
+            };
+
+            servicesTrigger.addEventListener("click", toggleServicesMenu);
+            servicesTrigger.addEventListener("touchend", toggleServicesMenu, { passive: false });
 
             document.addEventListener("click", (event) => {
                 if (!servicesMenu.contains(event.target)) {
