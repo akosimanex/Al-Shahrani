@@ -120,22 +120,17 @@ body {
     border-radius: 12px;
     box-shadow: 0 16px 36px rgba(6, 42, 63, 0.16);
     padding: 10px;
-    display: grid;
+    display: none;
     gap: 4px;
-    opacity: 0;
-    transform: translateY(8px);
-    pointer-events: none;
-    transition: opacity 0.2s ease, transform 0.2s ease;
     z-index: 60;
 }
 
 .services-menu.is-open .services-flyout {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
+    display: grid;
 }
 
 .services-flyout a {
+    display: block;
     text-decoration: none;
     color: #294758;
     font-size: 0.92rem;
@@ -820,11 +815,14 @@ h1 {
         width: min(90vw, 320px);
         max-height: 65vh;
         overflow: auto;
-        transform: translate(-50%, 8px);
+        transform: translateX(-50%);
     }
 
-    .services-menu.is-open .services-flyout {
-        transform: translate(-50%, 0);
+    .services-flyout a {
+        border: 0;
+        background: transparent;
+        padding: 8px 10px;
+        font-size: 0.92rem;
     }
 
     .header .btn {
@@ -891,6 +889,21 @@ h1 {
 }
 
 @media (max-width: 480px) {
+    .services-menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-flyout {
+        position: static;
+        margin-top: 8px;
+        width: min(92vw, 360px);
+        max-width: 92vw;
+        transform: none;
+    }
+
     .nav-links {
         gap: 6px;
     }
