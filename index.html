@@ -339,8 +339,12 @@
                 if (isOpen) placeServicesFlyout();
             };
 
-            servicesTrigger.addEventListener("click", toggleServicesMenu);
-            servicesTrigger.addEventListener("touchend", toggleServicesMenu, { passive: false });
+            servicesTrigger.addEventListener("pointerup", toggleServicesMenu);
+            servicesTrigger.addEventListener("keydown", (event) => {
+                if (event.key === "Enter" || event.key === " ") {
+                    toggleServicesMenu(event);
+                }
+            });
 
             document.addEventListener("click", (event) => {
                 if (!servicesMenu.contains(event.target)) {
