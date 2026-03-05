@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=asts-pro-2">
+    <link rel="stylesheet" href="styles.css?v=asts-pro-1">
 </head>
 <body>
     <div class="site-bg" aria-hidden="true"></div>
@@ -16,7 +16,7 @@
     <header class="header">
         <div class="container nav">
             <a href="#top" class="brand">
-                <img class="brand-mark" src="logo.png" alt="Al Shahrani Technical Services logo">
+                <img class="brand-mark" src="Image/logo.png" alt="Al Shahrani Technical Services logo">
                 <span class="brand-text">Al Shahrani Technical Services LLC</span>
             </a>
             <nav class="nav-links" aria-label="Primary">
@@ -33,9 +33,9 @@
     <main id="top">
         <section class="hero">
             <div class="hero-bg" aria-hidden="true">
-                <div class="hero-bg-slide slide-a"></div>
-                <div class="hero-bg-slide slide-b"></div>
-                <div class="hero-bg-slide slide-c"></div>
+                <video class="hero-video" autoplay muted loop playsinline webkit-playsinline preload="auto">
+                    <source src="video.mp4" type="video/mp4">
+                </video>
             </div>
             <div class="hero-overlay" aria-hidden="true"></div>
 
@@ -106,7 +106,7 @@
                 <div class="team-grid">
                     <article class="member featured">
                         <div class="member-head">
-                            <img class="member-photo" src="safar.png" alt="Dr. Safar Mastour Alshahrani">
+                            <img class="member-photo" src="Image/safar.png" alt="Dr. Safar Mastour Alshahrani">
                             <div>
                                 <h3>Dr. Safar Mastour Alshahrani</h3>
                                 <p>Owner</p>
@@ -115,7 +115,7 @@
                     </article>
                     <article class="member featured">
                         <div class="member-head">
-                            <img class="member-photo" src="regina.png" alt="Regina Sta. Ana">
+                            <img class="member-photo" src="Image/regina.png" alt="Regina Sta. Ana">
                             <div>
                                 <h3>Regina Sta. Ana</h3>
                                 <p>CEO</p>
@@ -124,7 +124,7 @@
                     </article>
                     <article class="member">
                         <div class="member-head">
-                            <img class="member-photo" src="alton.png" alt="Alton Balinquit">
+                            <img class="member-photo" src="Image/alton.png" alt="Alton Balinquit">
                             <div>
                                 <h3>Alton Balinquit</h3>
                                 <p>Project Manager</p>
@@ -133,7 +133,7 @@
                     </article>
                     <article class="member">
                         <div class="member-head">
-                            <img class="member-photo" src="john.png" alt="John Harvey Oxima">
+                            <img class="member-photo" src="Image/john.png" alt="John Harvey Oxima">
                             <div>
                                 <h3>John Harvey Oxima</h3>
                                 <p>Construction Project Engineer - Mechanical</p>
@@ -142,7 +142,7 @@
                     </article>
                     <article class="member">
                         <div class="member-head">
-                            <img class="member-photo" src="clifford.png" alt="Clifford James Mendoza">
+                            <img class="member-photo" src="Image/clifford.png" alt="Clifford James Mendoza">
                             <div>
                                 <h3>Clifford James Mendoza</h3>
                                 <p>Construction Project Engineer - Civil</p>
@@ -151,7 +151,7 @@
                     </article>
                     <article class="member">
                         <div class="member-head">
-                            <img class="member-photo" src="carlo.png" alt="Carlo Carania">
+                            <img class="member-photo" src="Image/carlo.png" alt="Carlo Carania">
                             <div>
                                 <h3>Carlo Carania</h3>
                                 <p>Admin Assistant</p>
@@ -160,7 +160,7 @@
                     </article>
                     <article class="member">
                         <div class="member-head">
-                            <img class="member-photo" src="amin.png" alt="Amin Howlader">
+                            <img class="member-photo" src="Image/amin.png" alt="Amin Howlader">
                             <div>
                                 <h3>Amin Howlader</h3>
                                 <p>IT and Admin Officer</p>
@@ -279,6 +279,14 @@
 
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
+
+        const heroVideo = document.querySelector(".hero-video");
+        if (heroVideo) {
+            heroVideo.muted = true;
+            heroVideo.loop = true;
+            heroVideo.autoplay = true;
+            heroVideo.play().catch(() => {});
+        }
     </script>
 </body>
 </html>

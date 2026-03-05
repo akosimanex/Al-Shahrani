@@ -21,6 +21,7 @@ body {
     color: var(--ink);
     background: linear-gradient(165deg, #f4f7f6 0%, #e9eceb 42%, #f8fbfa 100%);
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 .container {
@@ -202,39 +203,39 @@ body[data-tab="general-construction"] .detail-slide {
 }
 
 body[data-tab="general-construction"] .detail-slide.s1 {
-    background-image: url("general-1.jpg");
+    background-image: url("Image/general-1.jpg");
     background-position: center 42%;
 }
 
 body[data-tab="general-construction"] .detail-slide.s2 {
-    background-image: url("general-2.jpg");
+    background-image: url("Image/general-2.jpg");
     background-position: center 46%;
 }
 
 body[data-tab="general-construction"] .detail-slide.s3 {
-    background-image: url("general-3.jpg");
+    background-image: url("Image/general-3.jpg");
     background-position: center 38%;
 }
 
-body[data-tab="mep-services"] .detail-slide.s1 { background-image: url("detail-mep-services-1.svg"); }
-body[data-tab="mep-services"] .detail-slide.s2 { background-image: url("detail-mep-services-2.svg"); }
-body[data-tab="mep-services"] .detail-slide.s3 { background-image: url("detail-mep-services-3.svg"); }
+body[data-tab="mep-services"] .detail-slide.s1 { background-image: url("Image/mep1.jpg"); }
+body[data-tab="mep-services"] .detail-slide.s2 { background-image: url("Image/mep2.jpg"); }
+body[data-tab="mep-services"] .detail-slide.s3 { background-image: url("Image/mep3.jpg"); }
 
-body[data-tab="construction-management"] .detail-slide.s1 { background-image: url("detail-construction-management-1.svg"); }
-body[data-tab="construction-management"] .detail-slide.s2 { background-image: url("detail-construction-management-2.svg"); }
-body[data-tab="construction-management"] .detail-slide.s3 { background-image: url("detail-construction-management-3.svg"); }
+body[data-tab="construction-management"] .detail-slide.s1 { background-image: url("Tabs/detail-construction-management-1.svg"); }
+body[data-tab="construction-management"] .detail-slide.s2 { background-image: url("Tabs/detail-construction-management-2.svg"); }
+body[data-tab="construction-management"] .detail-slide.s3 { background-image: url("Tabs/detail-construction-management-3.svg"); }
 
-body[data-tab="interior-design-build"] .detail-slide.s1 { background-image: url("detail-interior-design-build-1.svg"); }
-body[data-tab="interior-design-build"] .detail-slide.s2 { background-image: url("detail-interior-design-build-2.svg"); }
-body[data-tab="interior-design-build"] .detail-slide.s3 { background-image: url("detail-interior-design-build-3.svg"); }
+body[data-tab="interior-design-build"] .detail-slide.s1 { background-image: url("Tabs/detail-interior-design-build-1.svg"); }
+body[data-tab="interior-design-build"] .detail-slide.s2 { background-image: url("Tabs/detail-interior-design-build-2.svg"); }
+body[data-tab="interior-design-build"] .detail-slide.s3 { background-image: url("Tabs/detail-interior-design-build-3.svg"); }
 
-body[data-tab="our-process"] .detail-slide.s1 { background-image: url("detail-our-process-1.svg"); }
-body[data-tab="our-process"] .detail-slide.s2 { background-image: url("detail-our-process-2.svg"); }
-body[data-tab="our-process"] .detail-slide.s3 { background-image: url("detail-our-process-3.svg"); }
+body[data-tab="our-process"] .detail-slide.s1 { background-image: url("Tabs/detail-our-process-1.svg"); }
+body[data-tab="our-process"] .detail-slide.s2 { background-image: url("Tabs/detail-our-process-2.svg"); }
+body[data-tab="our-process"] .detail-slide.s3 { background-image: url("Tabs/detail-our-process-3.svg"); }
 
-body[data-tab="why-choose-us"] .detail-slide.s1 { background-image: url("detail-why-choose-us-1.svg"); }
-body[data-tab="why-choose-us"] .detail-slide.s2 { background-image: url("detail-why-choose-us-2.svg"); }
-body[data-tab="why-choose-us"] .detail-slide.s3 { background-image: url("detail-why-choose-us-3.svg"); }
+body[data-tab="why-choose-us"] .detail-slide.s1 { background-image: url("Tabs/detail-why-choose-us-1.svg"); }
+body[data-tab="why-choose-us"] .detail-slide.s2 { background-image: url("Tabs/detail-why-choose-us-2.svg"); }
+body[data-tab="why-choose-us"] .detail-slide.s3 { background-image: url("Tabs/detail-why-choose-us-3.svg"); }
 
 @keyframes detailFade {
     0% { opacity: 0; transform: scale(1.08) translateX(0); }
@@ -258,6 +259,22 @@ body[data-tab="why-choose-us"] .detail-slide.s3 { background-image: url("detail-
     .detail-nav {
         flex-wrap: wrap;
         padding: 10px 0;
+        gap: 10px;
+    }
+
+    .brand {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .brand-mark {
+        width: 44px;
+        height: 44px;
+    }
+
+    .back-link {
+        width: 100%;
+        text-align: center;
     }
 
     .detail-hero {
@@ -268,7 +285,22 @@ body[data-tab="why-choose-us"] .detail-slide.s3 { background-image: url("detail-
         padding: 54px 0;
     }
 
+    h1 {
+        font-size: clamp(1.8rem, 8vw, 2.5rem);
+        max-width: 100%;
+    }
+
+    .panel {
+        padding: 18px;
+    }
+
     .brand-text {
         font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-text {
+        display: none;
     }
 }
