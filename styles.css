@@ -779,7 +779,8 @@ h1 {
     }
 
     .nav {
-        gap: 10px;
+        gap: 8px;
+        align-items: stretch;
     }
 
     .brand {
@@ -797,30 +798,41 @@ h1 {
         width: 100%;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 8px 14px;
+        gap: 8px;
         overflow: visible;
         padding-bottom: 0;
     }
 
-    .nav-links a {
-        font-size: 0.9rem;
-    }
-
+    .nav-links a,
     .services-trigger {
         font-size: 0.9rem;
+        padding: 7px 10px;
+        border: 1px solid rgba(157, 176, 187, 0.75);
+        border-radius: 999px;
+        background: #fff;
+        line-height: 1.1;
     }
 
     .services-flyout {
-        left: 0;
+        left: 50%;
+        top: calc(100% + 8px);
         min-width: 0;
-        width: min(92vw, 340px);
+        width: min(90vw, 320px);
         max-height: 65vh;
         overflow: auto;
+        transform: translate(-50%, 8px);
+    }
+
+    .services-menu.is-open .services-flyout {
+        transform: translate(-50%, 0);
     }
 
     .header .btn {
         order: 3;
-        width: 100%;
+        width: auto;
+        align-self: center;
+        padding: 10px 14px;
+        font-size: 0.88rem;
     }
 
     .section {
@@ -874,13 +886,23 @@ h1 {
     }
 
     .brand-text {
-        font-size: 0.95rem;
+        display: none;
     }
 }
 
 @media (max-width: 480px) {
-    .brand-text {
-        display: none;
+    .nav-links {
+        gap: 6px;
+    }
+
+    .nav-links a,
+    .services-trigger {
+        font-size: 0.84rem;
+        padding: 6px 9px;
+    }
+
+    .header .btn {
+        width: 100%;
     }
 
     .footer-wrap {
