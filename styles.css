@@ -798,7 +798,7 @@ h1 {
         padding-bottom: 0;
     }
 
-    .nav-links a,
+    .nav-links > a,
     .services-trigger {
         font-size: 0.9rem;
         padding: 7px 10px;
@@ -908,7 +908,7 @@ h1 {
         gap: 6px;
     }
 
-    .nav-links a,
+    .nav-links > a,
     .services-trigger {
         font-size: 0.84rem;
         padding: 6px 9px;
